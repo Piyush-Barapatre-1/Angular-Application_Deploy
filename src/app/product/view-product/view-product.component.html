@@ -1,0 +1,32 @@
+<h3 class="text-white">Product Details:</h3>
+
+<table class="table" id="table1">
+    <thead >
+      <tr>
+        <th class="bg-primary col-1 text-center" scope="col">Product Id</th>
+        <th class="bg-primary col-1.5 text-center" scope="col">Product Name</th>
+        <th class="bg-primary col-1.5 text-center" scope="col">Manufacturer</th>
+        <th class="bg-primary col-1.5 text-center" scope="col">Availabel Qty.</th>
+        <th class="bg-primary col-1.5 text-center" scope="col">Reorder Level</th>
+        <th class="bg-primary col-1.5 text-center" scope="col">Colour</th>
+        <th class="bg-primary col-2 text-center" scope="col">Details</th>
+        <th class="bg-primary col-1.5 text-center" scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of productData">
+        <th class="bg-success text-center col-1" scope="row">{{p.id}}</th>
+        <td class="bg-success text-center col-1.5">{{p.productName}}</td>
+        <td class="bg-success text-center col-1.5">{{p.manufacturerName}}</td>
+        <td class="bg-success text-center col-1.5">{{p.availableQty}}</td>
+        <td class="bg-success text-center col-1.5">{{p.reorderLevel}}</td>
+        <td class="bg-success text-center col-1.5">{{p.color}}</td>
+        <td class="bg-success text-center col-1.5">{{p.details}}</td>
+        <td class="action bg-success text-center col-1.5">
+           <a (click)="onDelete(p.id)"> <i class="fa fa-trash-o" aria-hidden="true"></i> </a>
+            &nbsp;
+           <a (click)="onEdit(p.id)"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,35 @@
+<h3 class="text-white">Supplier Details:</h3>
+
+<table class="table" id="table1">
+    <thead >
+      <tr>
+        <th class="bg-success col-1 text-center" scope="col">Product Id</th>
+        <th class="bg-success col-1.33 text-center" scope="col">Supplier </th>
+        <th class="bg-success col-1.33 text-center" scope="col">Company </th>
+        <th class="bg-success col-1.33 text-center" scope="col">E-mail</th>
+        <th class="bg-success col-1.33 text-center" scope="col">Phone No.</th>
+        <th class="bg-success col-1.66 text-center" scope="col">Address</th>
+        <th class="bg-success col-1.33 text-center" scope="col">City</th>
+        <th class="bg-success col-1.33 text-center" scope="col">State</th>
+        <th class="bg-success col-1.33 text-center" scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of supplierData">
+        <th class="bg-white text-center col-1.33" scope="row">{{p.id}}</th>
+        <th class="bg-white text-center col-1.33" scope="row">{{p.supplier.supplierName}}</th>
+        <td class="bg-white text-center col-1.33">{{p.supplier.supplierCompanyName}}</td>
+        <td class="bg-white text-center col-1.33">{{p.supplier.supplierEmail}}</td>
+        <td class="bg-white text-center col-1.33">{{p.supplier.contactNo}}</td>
+        <td class="bg-white text-center col-1.33">{{p.supplier.address}}</td>
+        <td class="bg-white text-center col-1.33">{{p.supplier.city}}</td>
+        <td class="bg-white text-center col-1.33">{{p.supplier.state}}</td>
+        <td class="action bg-white text-center col-1.33">
+           <a > <i class="fa fa-trash-o" aria-hidden="true"></i> </a>
+            &nbsp;
+           <a > <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+

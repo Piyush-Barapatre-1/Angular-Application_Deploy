@@ -1,0 +1,22 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "productName": "Laptop",
+      "manufacturerName": "HP",
+      "availableQty": "10",
+      "reorderLevel": "High",
+      "color": "Blue",
+      "details": "Intel i9",
+      "supplier": {
+        "supplierName": "HP Services",
+        "supplierCompanyName": "Piyush",
+        "supplierEmail": "barapatrepiyush8@gmail.com",
+        "address": "Dighori",
+        "contactNo": "9156020868",
+        "city": "Nagpur",
+        "state": "Maharshtra"
+      }
+    }
+  ]
+}

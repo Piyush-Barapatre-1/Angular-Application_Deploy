@@ -1,0 +1,119 @@
+<div class="main-div">
+
+<h3 class="text-success text-center">Enter Product Details</h3>
+
+<form class="row g-3" [formGroup]="registerProduct" (ngSubmit)="onSubmit()">
+    <div class="col-md-2">
+      <label for="id" class="form-label">Enter Product Id</label>
+      <input type="text" class="form-control" id="id" formControlName="id">
+    </div>
+    <div class="col-md-6">
+      <label for="pname" class="form-label">Enter Product Name</label>
+      <input type="text" class="form-control" id="pname" formControlName="productName">
+    </div>
+    <div class="col-md-3">
+      <label for="manfname" class="form-label">Enter Manufacturer Name</label>
+      <input type="text" class="form-control" id="manfname" formControlName="manufacturerName">
+    </div>
+    <div class="col-md-2">
+      <label for="qty" class="form-label">Available Quantity 2</label>
+      <input type="tel" class="form-control" id="qty" formControlName="availableQty">
+    </div>
+    <div class="col-md-6">
+      <label for="pdetails" class="form-label">Enter Product Details</label>
+      <input type="text" class="form-control" id="pdetails" formControlName="details">
+    </div>
+    <div class="col-md-4">
+      <label for="rlevel" class="form-label">Enter Reorder Level</label>
+      <select id="rlevel" class="form-select" formControlName="reorderLevel">
+        <option selected>Choose...</option>
+        <option>High</option>
+        <option>Low</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="color" class="form-label">Enter Product Colour</label>
+      <input type="text" class="form-control" id="color" formControlName="color">
+    </div>
+
+    <hr>
+
+    <h3 class="text-success text-center">Enter Supplier Details</h3>
+
+    <div formGroupName="supplier" class="main-div row g-3">
+
+      <div class="col-md-4">
+        <label for="sName" class="form-label">Enter Supplier Name</label>
+        <input type="text" class="form-control" id="sName" formControlName="supplierName">
+      </div>
+
+      <div class="col-md-7">
+        <label for="cName" class="form-label">Enter Supplier Company Name</label>
+        <input type="text" class="form-control" id="cName" formControlName="supplierCompanyName">
+      </div>
+
+      <div class="col-md-4">
+        <label for="email" class="form-label">Enter Supplier E-mail</label>
+        <input type="email" class="form-control" id="email" formControlName="supplierEmail">
+      </div>
+
+      <div class="col-md-4">
+        <label for="cNo" class="form-label">Enter Supplier Contact No.</label>
+        <input type="tel" class="form-control" id="cNo" formControlName="contactNo">
+      </div>
+
+      <div class="col-md-4">
+        <label for="address" class="form-label">Enter Supplier Address</label>
+        <input type="text" class="form-control" id="address" formControlName="address">
+      </div>
+
+      <div class="col-md-4">
+        <label for="city" class="form-label">Enter Supplier City </label>
+        <input type="text" class="form-control" id="city" formControlName="city">
+      </div>
+
+      <div class="col-md-4">
+        <label for="rlevel" class="form-label">Enter Supplier State</label>
+        <select id="rlevel" class="form-select" formControlName="state">
+          <option selected>Choose...</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chattisgarh">Chattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujrat">Gujrat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnatak">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharshtra">Maharshtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="West Bengal">West Bengal</option>
+          <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+        </select>
+      </div>
+
+
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </div>
+
+  </form>
+</div>
